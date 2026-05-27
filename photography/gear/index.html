@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photography Gear - Aarsh Shekhar</title>
+  <meta name="color-scheme" content="dark light" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="../../css/photography.css" />
+</head>
+<body>
+  <div class="photo-page">
+    <header class="topbar">
+      <a class="brand" href="../../photography/">aarsh/photography/gear</a>
+      <nav class="topnav" aria-label="Photography navigation">
+        <a href="../../photography/">Gallery</a>
+        <a class="is-active" href="../../photography/gear/">Gear</a>
+        <span>›</span>
+      </nav>
+      <div class="quick-actions">
+        <button type="button" aria-label="Open command palette" data-command-toggle>⌘</button>
+        <button type="button" aria-label="Toggle theme" data-theme-toggle>☀</button>
+        <button type="button" aria-label="Open menu" data-menu-toggle>☰</button>
+      </div>
+    </header>
+
+    <main class="photo-shell gear-shell">
+      <section class="gear-hero">
+        <h1>Gear</h1>
+        <p>The current gallery is mostly field documentation from phones and compact cameras, edited lightly to preserve the digicam look.</p>
+      </section>
+      <section class="gear-list">
+        <article class="gear-card">
+          <div class="gear-tile">iPhone</div>
+          <div>
+            <h2>Apple iPhone</h2>
+            <p>Main camera and ultrawide frames from backpacking, research events, and project documentation.</p>
+          </div>
+        </article>
+        <article class="gear-card">
+          <div class="gear-tile">RX</div>
+          <div>
+            <h2>Compact Camera Style</h2>
+            <p>The page uses Brian’s compact-camera metadata treatment, with film-like hover captions and varied frame proportions.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-line">(o_ &nbsp; (o_ &nbsp; (/)_</div>
+      <div class="footer-icons"><a href="https://github.com/Aarsh-Shekhar">GH</a><a href="https://scholar.google.com/citations?user=h3AGhvAAAAAJ&hl=en">GS</a><a href="https://www.linkedin.com/in/aarsh-shekhar">in</a></div>
+      <p>Aarsh Shekhar © 2026 • Have a good Wednesday, and DFTBA! :) • <a href="mailto:aarsh.shekhar@hotmail.com">Contact me</a></p>
+    </footer>
+
+    <aside class="utility-panel" data-menu-panel>
+      <a href="../../work/">Work</a>
+      <a href="../../projects/">Projects</a>
+      <a href="../../research/">Research</a>
+      <a href="../../miscellany/">Miscellany</a>
+    </aside>
+    <aside class="command-panel" data-command-panel>
+      <input type="search" placeholder="Search pages..." data-command-input />
+      <div class="command-results" data-command-results></div>
+    </aside>
+    <button class="scroll-top" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">⌃</button>
+  </div>
+  <script src="../../js/photography.js"></script>
+</body>
+</html>

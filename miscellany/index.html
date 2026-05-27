@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Miscellany - Aarsh Shekhar</title>
+  <meta name="description" content="A curated collection of what I read, listen to, watch, and use." />
+  <meta name="color-scheme" content="dark light" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="../css/miscellany.css" />
+</head>
+<body>
+  <div class="misc-page">
+    <header class="topbar">
+      <a class="brand" href="../index.html">aarsh/miscellany</a>
+      <nav class="topnav" aria-label="Miscellany navigation">
+        <a class="is-active" href="../miscellany/">Overview</a>
+        <a href="../library/">Music</a>
+        <a href="../bookshelf/">Books</a>
+        <a href="../quotes/">Quotes</a>
+        <a href="../channels/">Channels</a>
+        <span>›</span>
+      </nav>
+      <div class="quick-actions">
+        <button type="button" aria-label="Open command palette" data-command-toggle>⌘</button>
+        <button type="button" aria-label="Toggle theme" data-theme-toggle>☀</button>
+        <button type="button" aria-label="Open menu" data-menu-toggle>☰</button>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero">
+        <h1 class="page-title">Miscellany</h1>
+        <p>A curated collection of what I read, listen to, watch, and use.</p>
+      </section>
+      <div data-overview></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-line">(o_ &nbsp; (o_ &nbsp; (/)_</div>
+      <div class="footer-icons">
+        <a href="https://github.com/Aarsh-Shekhar" target="_blank" rel="noopener noreferrer">GH</a>
+        <a href="https://scholar.google.com/citations?user=h3AGhvAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">GS</a>
+        <a href="https://www.linkedin.com/in/aarsh-shekhar" target="_blank" rel="noopener noreferrer">in</a>
+      </div>
+      <p>Aarsh Shekhar © 2026 • Have a good Wednesday, and DFTBA! :) • <a href="mailto:aarsh.shekhar@hotmail.com">Contact me</a></p>
+    </footer>
+
+    <aside class="utility-panel" data-menu-panel>
+      <a href="../work/">Work</a>
+      <a href="../projects/">Projects</a>
+      <a href="../research/">Research</a>
+      <a href="../blog/">Thoughts</a>
+      <a href="../photography/">Photography</a>
+    </aside>
+
+    <aside class="command-panel" data-command-panel>
+      <input type="search" placeholder="Search pages..." data-command-input />
+      <div class="command-results" data-command-results></div>
+    </aside>
+
+    <button class="scroll-top" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">⌃</button>
+  </div>
+  <script src="../js/miscellany.js"></script>
+</body>
+</html>

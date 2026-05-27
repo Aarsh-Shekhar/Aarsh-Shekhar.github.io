@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Channels - Aarsh Shekhar</title>
+  <meta name="color-scheme" content="dark light" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="../css/miscellany.css" />
+</head>
+<body>
+  <div class="misc-page">
+    <header class="topbar">
+      <a class="brand" href="../miscellany/">aarsh/channels</a>
+      <nav class="topnav"><a href="../miscellany/">Overview</a><a href="../library/">Music</a><a href="../bookshelf/">Books</a><a href="../quotes/">Quotes</a><a class="is-active" href="../channels/">Channels</a><span>›</span></nav>
+      <div class="quick-actions"><button type="button" data-command-toggle>⌘</button><button type="button" data-theme-toggle>☀</button><button type="button" data-menu-toggle>☰</button></div>
+    </header>
+    <main class="page-shell">
+      <section class="hero">
+        <h1 class="page-title">Channels</h1>
+        <p>Favorite channels, grouped by topic.</p>
+      </section>
+      <div class="filter-pills">
+        <button class="is-active" type="button" data-filter="All groups">All groups</button>
+        <button type="button" data-filter="STEM">STEM</button>
+        <button type="button" data-filter="History">History</button>
+        <button type="button" data-filter="World">World</button>
+        <button type="button" data-filter="Infrastructure">Infrastructure</button>
+        <button type="button" data-filter="Econ">Econ</button>
+        <button type="button" data-filter="Creators">Creators</button>
+      </div>
+      <p class="showing-text" data-showing>Showing 31 channels across 6 groups.</p>
+      <div data-channel-groups></div>
+    </main>
+    <footer class="site-footer"><div class="footer-line">(o_ &nbsp; (o_ &nbsp; (/)_</div><div class="footer-icons"><a href="https://github.com/Aarsh-Shekhar">GH</a><a href="https://scholar.google.com/citations?user=h3AGhvAAAAAJ&hl=en">GS</a><a href="https://www.linkedin.com/in/aarsh-shekhar">in</a></div><p>Aarsh Shekhar © 2026 • Have a good Wednesday, and DFTBA! :) • <a href="mailto:aarsh.shekhar@hotmail.com">Contact me</a></p></footer>
+    <aside class="utility-panel" data-menu-panel><a href="../miscellany/">Overview</a><a href="../library/">Music</a><a href="../bookshelf/">Books</a><a href="../quotes/">Quotes</a></aside>
+    <aside class="command-panel" data-command-panel><input type="search" placeholder="Search pages..." data-command-input /><div class="command-results" data-command-results></div></aside>
+    <button class="scroll-top" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">⌃</button>
+  </div>
+  <script src="../js/miscellany.js"></script>
+</body>
+</html>

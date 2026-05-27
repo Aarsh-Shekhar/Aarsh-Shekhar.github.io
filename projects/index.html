@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Aarsh Shekhar</title>
+  <meta name="description" content="Selected projects from Aarsh Shekhar across AI, research, robotics, health, and public-interest technology." />
+  <meta name="color-scheme" content="dark light" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="../css/projects.css" />
+</head>
+<body>
+  <div class="projects-page">
+    <header class="topbar" aria-label="Primary navigation">
+      <a class="brand" href="../index.html">aarsh/projects</a>
+
+      <nav class="topnav">
+        <a href="../work/">Work</a>
+        <a href="../projects/" aria-current="page">Projects</a>
+        <a href="../research/">Research</a>
+        <a href="../blog/">Thoughts</a>
+        <a href="../photography/">Photography</a>
+        <a href="../miscellany/">Miscellany</a>
+      </nav>
+
+      <div class="quick-actions" aria-label="Display controls">
+        <button type="button" data-command-open aria-label="Open command bar">⌘</button>
+        <button type="button" data-theme-toggle aria-label="Toggle theme">☀</button>
+        <button type="button" data-menu-toggle aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <div class="menu-popover" data-menu-popover aria-hidden="true">
+      <a href="../index.html">Home</a>
+      <a href="../work/">Work</a>
+      <a href="../projects/">Projects</a>
+      <a href="../research/">Research</a>
+      <a href="../blog/">Thoughts</a>
+      <a href="mailto:aarsh.shekhar@hotmail.com">Contact</a>
+    </div>
+
+    <main>
+      <section class="projects-hero">
+        <h1>Projects</h1>
+      </section>
+
+      <section class="toc-band" aria-labelledby="toc-heading">
+        <div class="toc-inner">
+          <h2 id="toc-heading">Table of Contents</h2>
+          <div class="toc-grid">
+            <a href="#decentralized-study-notes-marketplace">Decentralized Study Notes Marketplace</a>
+            <a href="#ilog-2-0">iLog 2.0</a>
+            <a href="#iot-laundry-tracker">IoT Laundry Tracker</a>
+            <a href="#jwst-cosmic-ray-filtering-pipeline">JWST Cosmic Ray Filtering Pipeline</a>
+            <a href="#mars-terrain-segmentation-model">Mars Terrain Segmentation Model</a>
+            <a href="#mindmates-app">MindMates App</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-toolbar" aria-label="Project sorting and filters">
+        <div class="toolbar-inner">
+          <div class="sort-tabs" role="group" aria-label="Sort projects">
+            <span class="sort-icon" aria-hidden="true">↕</span>
+            <button type="button" class="is-active" data-sort="az" aria-pressed="true">A-Z</button>
+            <button type="button" data-sort="date" aria-pressed="false">By Date</button>
+            <button type="button" data-sort="stars" aria-pressed="false">By Stars</button>
+          </div>
+
+          <div class="filter-tabs" role="group" aria-label="Filter projects">
+            <button type="button" class="is-active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="project" aria-pressed="false">Projects</button>
+            <button type="button" data-filter="contribution" aria-pressed="false">Contributions</button>
+            <button type="button" data-filter="other" aria-pressed="false">Other</button>
+            <button type="button" class="filter-icon" data-filter="all" aria-label="Clear filters">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16l-6.4 7.4v5.1l-3.2 1.8v-6.9L4 5Z"></path></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-list" data-project-list aria-live="polite">
+        <article class="project-item" id="decentralized-study-notes-marketplace" data-project data-title="Decentralized Study Notes Marketplace" data-date="2024-11" data-stars="5" data-kind="project">
+          <div class="project-copy">
+            <h3><span>Decentralized Study Notes Marketplace</span> <small>November 2024</small></h3>
+            <div class="pills">
+              <span class="pill pill--star">★ 5</span>
+              <span class="pill">Web3</span>
+              <span class="pill">IPFS</span>
+              <span class="pill">Solidity</span>
+            </div>
+            <p class="summary">Secure note sharing with decentralized storage and incentive design.</p>
+            <p class="description">Prototyped a Web3 marketplace where students could publish, verify, and exchange high-quality study notes through IPFS-backed storage and Solidity-based reward mechanisms.</p>
+            <p class="links">Links:
+              <a href="https://ipfs.tech/" target="_blank" rel="noopener noreferrer">IPFS <span>↗</span></a>
+              <a href="https://soliditylang.org/" target="_blank" rel="noopener noreferrer">Solidity <span>↗</span></a>
+            </p>
+          </div>
+          <a class="preview-card preview-card--market" href="https://ipfs.tech/" target="_blank" rel="noopener noreferrer" aria-label="IPFS project reference">
+            <span class="preview-orbit" aria-hidden="true"></span>
+            <span class="preview-label">Protocol</span>
+            <strong>notes.market</strong>
+          </a>
+        </article>
+
+        <article class="project-item" id="ilog-2-0" data-project data-title="iLog 2.0" data-date="2024-04" data-stars="7" data-kind="contribution">
+          <div class="project-copy">
+            <h3><span>iLog 2.0</span> <small>April 2024</small></h3>
+            <div class="pills">
+              <span class="pill pill--star">★ 7</span>
+              <span class="pill">IEEE Xplore</span>
+              <span class="pill">Health AI</span>
+              <span class="pill">Object Detection</span>
+            </div>
+            <p class="summary">Smart-health food identification and nutrition estimation system.</p>
+            <p class="description">Built a lightweight object-detection pipeline that identifies foods and estimates nutritional values, demonstrating practical diet-tracking performance for real-world use.</p>
+            <p class="links">Links:
+              <a href="https://ieeexplore.ieee.org/" target="_blank" rel="noopener noreferrer">IEEE Xplore <span>↗</span></a>
+            </p>
+          </div>
+          <a class="preview-card preview-card--ilog" href="https://ieeexplore.ieee.org/" target="_blank" rel="noopener noreferrer" aria-label="IEEE Xplore reference">
+            <span class="plate" aria-hidden="true"></span>
+            <span class="preview-label">Paper</span>
+            <strong>iLog 2.0</strong>
+          </a>
+        </article>
+
+        <article class="project-item" id="iot-laundry-tracker" data-project data-title="IoT Laundry Tracker" data-date="2025-02" data-stars="4" data-kind="other">
+          <div class="project-copy">
+            <h3><span>IoT Laundry Tracker</span> <small>February 2025</small></h3>
+            <div class="pills">
+              <span class="pill pill--star">★ 4</span>
+              <span class="pill">IoT</span>
+              <span class="pill">Sensors</span>
+              <span class="pill">Dashboard</span>
+            </div>
+            <p class="summary">Campus-specific monitoring for dorm laundry availability.</p>
+            <p class="description">Built a vibration-sensor device and web dashboard that tracks machine usage patterns in campus laundry rooms, making wait times visible before students walk across the dorm.</p>
+          </div>
+          <div class="preview-card preview-card--iot" aria-label="IoT device preview">
+            <span class="washer" aria-hidden="true"></span>
+            <span class="preview-label">Device</span>
+            <strong>laundry.live</strong>
+          </div>
+        </article>
+
+        <article class="project-item" id="jwst-cosmic-ray-filtering-pipeline" data-project data-title="JWST Cosmic Ray Filtering Pipeline" data-date="2025-06" data-stars="10" data-kind="contribution">
+          <div class="project-copy">
+            <h3><span>JWST Cosmic Ray Filtering Pipeline</span> <small>June 2025</small></h3>
+            <div class="pills">
+              <span class="pill pill--star">★ 10</span>
+              <span class="pill">Python</span>
+              <span class="pill">DBSCAN</span>
+              <span class="pill">PCA</span>
+              <span class="pill">Astronomy</span>
+            </div>
+            <p class="summary">Machine learning pipeline for telescope readout noise.</p>
+            <p class="description">Designed a DBSCAN-PCA workflow for identifying and filtering cosmic ray artifacts in telescope detector readouts, improving runtime by 10x while preserving interpretable clustering behavior.</p>
+            <p class="links">Links:
+              <a href="https://science.nasa.gov/mission/webb/" target="_blank" rel="noopener noreferrer">JWST <span>↗</span></a>
+              <a href="https://www.nasa.gov/centers-and-facilities/jpl/" target="_blank" rel="noopener noreferrer">JPL <span>↗</span></a>
+            </p>
+          </div>
+          <a class="preview-card preview-card--image" href="https://science.nasa.gov/mission/webb/" target="_blank" rel="noopener noreferrer" aria-label="JWST project reference">
+            <img src="../images/project-gaussian-noise.png" alt="Gaussian noise reference texture" />
+            <span class="preview-label">Pipeline</span>
+            <strong>jwst-noise</strong>
+          </a>
+        </article>
+
+        <article class="project-item" id="mars-terrain-segmentation-model" data-project data-title="Mars Terrain Segmentation Model" data-date="2025-03" data-stars="8" data-kind="project">
+          <div class="project-copy">
+            <h3><span>Mars Terrain Segmentation Model</span> <small>March 2025</small></h3>
+            <div class="pills">
+              <span class="pill pill--star">★ 8</span>
+              <span class="pill">Computer Vision</span>
+              <span class="pill">MobileNetV3</span>
+              <span class="pill">DeepLabV3</span>
+            </div>
+            <p class="summary">Real-time semantic segmentation for rover navigation.</p>
+            <p class="description">Created a lightweight MobileNetV3 and DeepLabV3 architecture for rover terrain parsing, tuned for low-latency edge deployment on Jetson Nano hardware.</p>
+            <p class="links">Links:
+              <a href="https://developer.nvidia.com/embedded/jetson-nano-developer-kit" target="_blank" rel="noopener noreferrer">Jetson Nano <span>↗</span></a>
+            </p>
+          </div>
+          <a class="preview-card preview-card--mars" href="https://developer.nvidia.com/embedded/jetson-nano-developer-kit" target="_blank" rel="noopener noreferrer" aria-label="Jetson Nano reference">
+            <span class="terrain" aria-hidden="true"></span>
+            <span class="preview-label">Model</span>
+            <strong>terrain-seg</strong>
+          </a>
+        </article>
+
+        <article class="project-item" id="mindmates-app" data-project data-title="MindMates App" data-date="2024-10" data-stars="12" data-kind="project">
+          <div class="project-copy">
+            <h3><span>MindMates App</span> <small>October 2024</small></h3>
+            <div class="pills">
+              <span class="pill pill--star">★ 12</span>
+              <span class="pill">AI</span>
+              <span class="pill">Accessibility</span>
+              <span class="pill">Education</span>
+            </div>
+            <p class="summary">AI-powered tutoring platform for autistic students in grades 2-10.</p>
+            <p class="description">Developed a personalized learning platform deployed across 16 Title I schools, pitched to 14 Fortune 500 firms, and secured $12K in funding through the Congressional App Challenge ecosystem.</p>
+            <p class="links">Links:
+              <a href="https://www.congressionalappchallenge.us/" target="_blank" rel="noopener noreferrer">Congressional App Challenge <span>↗</span></a>
+            </p>
+          </div>
+          <a class="preview-card preview-card--mind" href="https://www.congressionalappchallenge.us/" target="_blank" rel="noopener noreferrer" aria-label="Congressional App Challenge reference">
+            <span class="mind-grid" aria-hidden="true"></span>
+            <span class="preview-label">Website</span>
+            <strong>MindMates</strong>
+          </a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="projects-footer">
+      <div class="footer-line" aria-hidden="true"><span>(o_</span><span>(o_</span><span>(/)_</span></div>
+      <div class="footer-icons" aria-label="Social links">
+        <a href="https://github.com/Aarsh-Shekhar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+        <a href="https://scholar.google.com/citations?user=h3AGhvAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">GS</a>
+        <a href="https://www.linkedin.com/in/aarsh-shekhar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+      </div>
+      <p>Aarsh Shekhar © 2026 • Have a good Tuesday, and DFTBA! :) • <a href="mailto:aarsh.shekhar@hotmail.com">Contact me</a></p>
+    </footer>
+
+    <div class="command-overlay" data-command-overlay aria-hidden="true">
+      <div class="command-panel" role="dialog" aria-modal="true" aria-label="Command bar">
+        <input type="search" data-command-input placeholder="Jump to a project or page..." />
+        <div class="command-results" data-command-results></div>
+      </div>
+    </div>
+
+    <button type="button" class="scroll-top" data-scroll-top aria-label="Back to top">⌃</button>
+  </div>
+
+  <script src="../js/projects.js"></script>
+</body>
+</html>

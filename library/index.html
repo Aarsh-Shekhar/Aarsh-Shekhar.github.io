@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Music Library - Aarsh Shekhar</title>
+  <meta name="color-scheme" content="dark light" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="../css/miscellany.css" />
+</head>
+<body>
+  <div class="misc-page">
+    <header class="topbar">
+      <a class="brand" href="../miscellany/">aarsh/library</a>
+      <nav class="topnav" aria-label="Miscellany navigation">
+        <a href="../miscellany/">Overview</a>
+        <a class="is-active" href="../library/">Music</a>
+        <a href="../bookshelf/">Books</a>
+        <a href="../quotes/">Quotes</a>
+        <a href="../channels/">Channels</a>
+        <span>›</span>
+      </nav>
+      <div class="quick-actions">
+        <button type="button" aria-label="Open command palette" data-command-toggle>⌘</button>
+        <button type="button" aria-label="Toggle theme" data-theme-toggle>☀</button>
+        <button type="button" aria-label="Open menu" data-menu-toggle>☰</button>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero">
+        <h1 class="page-title">Music Library</h1>
+        <p>My curated collection of playlists, albums, artists, and favorite tracks.</p>
+      </section>
+
+      <div class="tabs">
+        <button class="tab is-active" type="button" data-library-tab>Playlists</button>
+        <button class="tab" type="button" data-library-tab>Albums</button>
+        <button class="tab" type="button" data-library-tab>Artists</button>
+        <button class="tab" type="button" data-library-tab>Songs</button>
+      </div>
+      <p class="ipod-note">Navigate with the scroll wheel, enter folders with the center button, go back with MENU. Press the play button to stream in the floating Spotify player.</p>
+
+      <section class="library-layout">
+        <div class="ipod">
+          <div class="ipod-screen">
+            <div class="ipod-status"><span>IPOD</span><span>5:54 AM</span><span>88%</span></div>
+            <div class="ipod-title" data-ipod-title>Playlists</div>
+            <ul class="ipod-list">
+              <li class="is-active"><span>01 ♫ aarsh's Top Songs 2020-2025</span></li>
+              <li><span>02 ▸ Top Songs</span><span>›</span></li>
+              <li><span>03 ▸ 2025</span><span>›</span></li>
+              <li><span>04 ▸ 2026</span><span>›</span></li>
+            </ul>
+            <div class="ipod-footer"><span>1/4 • 4 items</span><span>500 songs • 5h 29m</span></div>
+          </div>
+          <div class="wheel"><span class="menu">MENU</span><span class="prev">◀◀</span><span class="next">▶▶</span></div>
+        </div>
+
+        <div>
+          <div class="playlist-head">
+            <div class="library-art"><img src="../images/misc/library-playlist.jpg" alt="Playlist art" /></div>
+            <div>
+              <h2>aarsh's Top Songs 2020-2025</h2>
+              <p>A collection of my most played tracks over the years.</p>
+              <p>500 songs <span aria-hidden="true">•</span> 5h 29m <a class="spotify-link" href="https://open.spotify.com/search/aarsh%27s%20Top%20Songs%202020-2025" target="_blank" rel="noopener noreferrer">Open in Spotify</a></p>
+            </div>
+            <button class="round-icon" type="button" aria-label="Play playlist">▶</button>
+            <button class="round-icon" type="button" aria-label="Favorite playlist">♡</button>
+          </div>
+
+          <h3 class="tracklist-title">Tracklist</h3>
+          <ol class="tracklist" data-tracklist></ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-line">(o_ &nbsp; (o_ &nbsp; (/)_</div>
+      <div class="footer-icons"><a href="https://github.com/Aarsh-Shekhar">GH</a><a href="https://scholar.google.com/citations?user=h3AGhvAAAAAJ&hl=en">GS</a><a href="https://www.linkedin.com/in/aarsh-shekhar">in</a></div>
+      <p>Aarsh Shekhar © 2026 • Have a good Wednesday, and DFTBA! :) • <a href="mailto:aarsh.shekhar@hotmail.com">Contact me</a></p>
+    </footer>
+    <aside class="utility-panel" data-menu-panel><a href="../miscellany/">Overview</a><a href="../bookshelf/">Books</a><a href="../quotes/">Quotes</a><a href="../channels/">Channels</a></aside>
+    <aside class="command-panel" data-command-panel><input type="search" placeholder="Search pages..." data-command-input /><div class="command-results" data-command-results></div></aside>
+    <button class="scroll-top" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">⌃</button>
+  </div>
+  <script src="../js/miscellany.js"></script>
+</body>
+</html>

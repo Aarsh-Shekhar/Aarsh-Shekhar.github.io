@@ -1,0 +1,480 @@
+/* ============================================================
+   Parclo Serif Student — local font (from brianzhou.org)
+   ============================================================ */
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('../fonts/ParcloSerifStudent-Regular.woff2') format('woff2'),
+       url('../fonts/ParcloSerifStudent-Regular.woff')  format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================================
+   Reset & Base
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  border: 0 solid #e5e5e5;
+}
+
+html {
+  color-scheme: dark;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@media (max-width: 767px) {
+  html {
+    overflow-y: auto;
+  }
+}
+
+body {
+  margin: 0;
+  line-height: inherit;
+  background: #18181b;
+  color: #e5e7eb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-y: auto;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+ul, ol, menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/* ============================================================
+   Page Layout
+   ============================================================ */
+.page-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.main-container {
+  position: relative;
+  z-index: 50;
+  isolation: isolate;
+  min-height: 100vh;
+  /* overflow must be visible so the full-bleed forest can escape the max-width box */
+  overflow: visible;
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  /* max-w-5xl = 64rem = 1024px */
+  max-width: 64rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* px-6 pt-12 pb-0 */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 0;
+}
+
+@media (min-width: 640px) {
+  .main-container {
+    /* sm:px-10 sm:pt-16 */
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 4rem;
+  }
+}
+
+/* ============================================================
+   Content Section
+   ============================================================ */
+.content-section {
+  position: relative;
+  z-index: 60;
+  /* mx-auto max-w-[43rem] font-sans */
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 41.75rem;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ============================================================
+   Name / Title
+   ============================================================ */
+.site-title {
+  font-family: "Parclo Serif", "Young Serif", Georgia, ui-serif, serif;
+  /* text-[1.6rem] leading-tight tracking-[-0.02em] */
+  font-size: 1.62rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #f4f4f5;
+  font-weight: 400;
+}
+
+@media (min-width: 640px) {
+  .site-title {
+    font-size: 1.72rem;
+  }
+}
+
+/* ============================================================
+   Bio Text
+   ============================================================ */
+.bio-text {
+  /* mt-3 max-w-2xl space-y-3 text-[0.88rem] leading-copy */
+  margin-top: 0.75rem;
+  max-width: 41.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.48;
+  color: #e5e7eb;
+}
+
+@media (min-width: 640px) {
+  .bio-text {
+    font-size: 0.92rem;
+  }
+}
+
+/* ============================================================
+   Inline Links (random-underline-inline style)
+   ============================================================ */
+.inline-link {
+  display: inline;
+  position: relative;
+  overflow: visible;
+  font-weight: 600;
+  color: #f4f4f5;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.inline-link:hover {
+  color: #ffffff;
+}
+
+.inline-link .link-text {
+  position: relative;
+  z-index: 2;
+  display: inline;
+}
+
+.inline-link .link-box {
+  display: inline;
+  position: static;
+  width: 0;
+  height: 0;
+}
+
+/* ============================================================
+   Navigation
+   ============================================================ */
+.site-nav {
+  /* mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 */
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 1.5rem;
+  row-gap: 0.75rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+}
+
+.nav-link {
+  display: inline;
+  position: relative;
+  overflow: visible;
+  font-size: 0.96rem;
+  color: #f2f2f3;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-link .link-text {
+  position: relative;
+  z-index: 2;
+  display: inline;
+}
+
+.nav-link .link-box {
+  display: inline;
+  position: static;
+  width: 0;
+  height: 0;
+}
+
+/* ============================================================
+   Social Icons
+   ============================================================ */
+.social-links {
+  /* ml-auto flex items-center gap-3 */
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.social-icon {
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.social-icon:hover {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.social-icon svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* ============================================================
+   Forest / Canvas Section
+   ============================================================ */
+.forest-wrapper {
+  position: relative;
+  z-index: 0;
+  margin-top: auto;
+  padding-top: 7.25rem;
+}
+
+@media (min-width: 640px) {
+  .forest-wrapper {
+    padding-top: 8rem;
+  }
+}
+
+.forest {
+  position: relative;
+  width: 100vw;
+  /* Stretch full-bleed beyond the container padding */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  height: clamp(310px, 43vh, 470px);
+  overflow: visible;
+  isolation: isolate;
+  pointer-events: auto;
+}
+
+@media (max-width: 767px) {
+  .forest {
+    height: clamp(260px, 42vh, 390px);
+  }
+}
+
+.forest-viewport {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.forest-canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+}
+
+.forest-canvas-bg { z-index: 1; }
+.forest-canvas-mid { z-index: 2; }
+.forest-canvas-fg  { z-index: 4; }
+
+/* ============================================================
+   Regenerate Button
+   ============================================================ */
+.forest-regen {
+  --bark:       rgba(193, 162, 129, 0.98);
+  --highlight:  rgba(241, 218, 193, 0.52);
+  --grass:      rgba(145, 171, 124, 0.94);
+  --grass-lt:   rgba(196, 216, 177, 0.74);
+
+  position: absolute;
+  right: clamp(8px, 2.3vw, 22px);
+  bottom: clamp(-4px, 0.35vh, 4px);
+  z-index: 6;
+  width: clamp(56px, 6.1vw, 70px);
+  height: clamp(52px, 5.4vw, 64px);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+  appearance: none;
+  outline: none;
+}
+
+.forest-regen::after {
+  content: "";
+  position: absolute;
+  left: 24%;
+  right: 8%;
+  bottom: 10%;
+  height: 16%;
+  border-radius: 999px;
+  background: rgba(53, 32, 16, 0.14);
+  filter: blur(7px);
+  pointer-events: none;
+}
+
+.forest-regen:focus-visible {
+  filter: drop-shadow(0 0 0.6rem rgba(249, 196, 166, 0.38));
+}
+
+.forest-regen-icon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: translateY(14%);
+}
+
+.regen-arrow {
+  transform-origin: 48px 44px;
+  transform: rotate(6deg);
+  transition: transform 180ms ease-out, opacity 180ms ease-out;
+}
+
+.forest-regen:hover .regen-arrow,
+.forest-regen:focus-visible .regen-arrow {
+  transform: rotate(9deg);
+}
+
+.forest-regen:active .regen-arrow {
+  transform: rotate(4deg) scale(0.98);
+}
+
+.regen-grass-bed {
+  transform: translateY(1px);
+}
+
+.regen-shadow {
+  fill: none;
+  stroke: rgba(42, 24, 12, 0.18);
+  stroke-width: 8.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.regen-branch {
+  fill: none;
+  stroke: var(--bark);
+  stroke-width: 7.1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.regen-highlight {
+  fill: none;
+  stroke: var(--highlight);
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.regen-grass {
+  fill: none;
+  stroke: var(--grass);
+  stroke-width: 2.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.regen-grass-light {
+  stroke: var(--grass-lt);
+  stroke-width: 1.9;
+}
+
+/* ============================================================
+   Birds Overlay — container only; all bird styles injected by birds.js
+   ============================================================ */
+.birds-sky {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* ============================================================
+   Underline SVG Layer (fixed, for the animated underlines)
+   ============================================================ */
+.underline-svg-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100;
+  overflow: visible;
+}
