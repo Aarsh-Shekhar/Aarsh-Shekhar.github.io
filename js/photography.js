@@ -6,6 +6,59 @@
   var base = window.location.pathname.indexOf('/photography/gear') === 0 ? '../../' : '../';
   var photos = [
     {
+      src: base + 'images/photography/photo-19.jpg',
+      title: 'Kelingking overlook',
+      caption: 'A cliffside view in Bali where the ocean goes impossibly blue and the scale of everything gets quiet.',
+      date: 'June 24, 2026',
+      location: 'Nusa Penida, Bali',
+      camera: 'Apple iPhone',
+      lens: 'Main Camera',
+      meta: ['iPhone', 'f/1.8', '1/1200s', 'ISO 32'],
+      tags: ['travel', 'bali', 'scenic'],
+      ratio: 'portrait',
+      polaroid: true,
+      tall: true
+    },
+    {
+      src: base + 'images/photography/photo-21.jpg',
+      title: 'Notre-Dame side light',
+      caption: 'A portrait inside the basilica, surrounded by blue arches, gold detail, and the kind of silence that photographs well.',
+      date: 'July 6, 2026',
+      location: 'Montreal, Quebec',
+      camera: 'Apple iPhone',
+      lens: 'Main Camera',
+      meta: ['iPhone', 'f/1.8', '1/90s', 'ISO 250'],
+      tags: ['travel', 'montreal', 'architecture'],
+      ratio: 'portrait',
+      polaroid: true
+    },
+    {
+      src: base + 'images/photography/photo-05.jpg',
+      title: 'Everest sunrise line',
+      caption: 'A cold sunrise above the clouds, with a rope team stepping through snow toward higher ground.',
+      date: 'May 27, 2026',
+      location: 'Everest region',
+      camera: 'Apple iPhone',
+      lens: 'Main Camera',
+      meta: ['4.25mm', 'f/1.8', '1/2400s', 'ISO 32'],
+      tags: ['everest', 'mountains', 'expedition'],
+      ratio: 'square',
+      polaroid: true
+    },
+    {
+      src: base + 'images/photography/photo-20.jpg',
+      title: 'Old Montreal menu',
+      caption: 'A dinner-table portrait tucked into a narrow street of warm lights, awnings, and slow summer foot traffic.',
+      date: 'July 5, 2026',
+      location: 'Montreal, Quebec',
+      camera: 'Apple iPhone',
+      lens: 'Main Camera',
+      meta: ['iPhone', 'f/1.8', '1/120s', 'ISO 160'],
+      tags: ['travel', 'montreal', 'portrait'],
+      ratio: 'portrait',
+      polaroid: true
+    },
+    {
       src: base + 'images/photography/photo-01.jpg',
       title: 'Philmont trail morning',
       caption: 'A bright trail morning with heavy packs and a long stretch of New Mexico forest ahead.',
@@ -18,6 +71,79 @@
       ratio: 'portrait',
       polaroid: true,
       tall: true
+    },
+    {
+      src: base + 'images/photography/photo-17.jpg',
+      title: 'Embarcadero blue hour',
+      caption: 'San Francisco at the edge of evening, with palms, streetlights, and the skyline beginning to glow.',
+      date: 'July 26, 2026',
+      location: 'San Francisco, California',
+      camera: 'Apple iPhone',
+      lens: 'Main Camera',
+      meta: ['iPhone', 'f/1.8', '1/120s', 'ISO 100'],
+      tags: ['travel', 'san francisco', 'city'],
+      ratio: 'portrait'
+    },
+    {
+      src: base + 'images/photography/photo-24.jpg',
+      title: 'San Francisco crew selfie',
+      caption: 'A quick street selfie after the day, framed by the Embarcadero lights and downtown skyline.',
+      date: 'July 26, 2026',
+      location: 'San Francisco, California',
+      camera: 'Apple iPhone',
+      lens: 'Front Camera',
+      meta: ['iPhone', 'f/2.2', '1/90s', 'ISO 125'],
+      tags: ['travel', 'san francisco', 'friends'],
+      ratio: 'wide',
+      polaroid: true
+    },
+    {
+      src: base + 'images/photography/photo-22.jpg',
+      title: 'Basilica altar study',
+      caption: 'A clean architectural frame of Notre-Dame, all symmetry, stained light, and impossible ornament.',
+      date: 'July 6, 2026',
+      location: 'Montreal, Quebec',
+      camera: 'Apple iPhone',
+      lens: 'Main Camera',
+      meta: ['iPhone', 'f/1.8', '1/100s', 'ISO 320'],
+      tags: ['travel', 'montreal', 'architecture'],
+      ratio: 'portrait'
+    },
+    {
+      src: base + 'images/photography/photo-16.jpg',
+      title: 'Arena keynote lights',
+      caption: 'A conference arena moment from high in the seats, with screens, lights, and a room full of attention.',
+      date: 'July 26, 2026',
+      location: 'San Francisco, California',
+      camera: 'Apple iPhone',
+      lens: 'Main Camera',
+      meta: ['iPhone', 'f/1.8', '1/120s', 'ISO 200'],
+      tags: ['conference', 'technology', 'san francisco'],
+      ratio: 'portrait'
+    },
+    {
+      src: base + 'images/photography/photo-18.jpg',
+      title: 'Campus walk',
+      caption: 'A shaded walk under tall trees, somewhere between debate rounds, campus wandering, and the next plan.',
+      date: 'July 27, 2026',
+      location: 'Stanford, California',
+      camera: 'Apple iPhone',
+      lens: 'Main Camera',
+      meta: ['iPhone', 'f/1.8', '1/500s', 'ISO 40'],
+      tags: ['campus', 'friends', 'california'],
+      ratio: 'portrait'
+    },
+    {
+      src: base + 'images/photography/photo-23.jpg',
+      title: 'Gothic ceiling detail',
+      caption: 'A closer look at the basilica interior, where the ceiling, columns, and carved wood turn into one dense pattern.',
+      date: 'July 6, 2026',
+      location: 'Montreal, Quebec',
+      camera: 'Apple iPhone',
+      lens: 'Main Camera',
+      meta: ['iPhone', 'f/1.8', '1/100s', 'ISO 400'],
+      tags: ['travel', 'montreal', 'architecture'],
+      ratio: 'portrait'
     },
     {
       src: base + 'images/photography/photo-02.jpg',
@@ -54,19 +180,6 @@
       meta: ['4.2mm', 'f/1.6', '1/820s', 'ISO 32'],
       tags: ['backpacking', 'philmont', 'crew'],
       ratio: 'wide'
-    },
-    {
-      src: base + 'images/photography/photo-05.jpg',
-      title: 'Everest sunrise line',
-      caption: 'A cold sunrise above the clouds, with a rope team stepping through snow toward higher ground.',
-      date: 'May 27, 2026',
-      location: 'Everest region',
-      camera: 'Apple iPhone',
-      lens: 'Main Camera',
-      meta: ['4.25mm', 'f/1.8', '1/2400s', 'ISO 32'],
-      tags: ['everest', 'mountains', 'expedition'],
-      ratio: 'square',
-      polaroid: true
     },
     {
       src: base + 'images/photography/photo-06.jpg',
